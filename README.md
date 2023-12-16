@@ -1,3 +1,3 @@
-# mattbber.github.io
+mattbber.github.io
 
 this is pretty cool
