@@ -58,15 +58,17 @@ a {
 
 .fancy > .outer {
     transition: transform 350ms ease;
-    cursor: default;
+    cursor: none;
 }
 
 .fancy:hover > .outer {
     transition-duration: 800ms;
+    cursor: none;
 }
 
 .fancy:hover > .outer > .inner {
     animation: float 5s ease infinite;
+    cursor: none;
 }
 
 .fancy:hover > .outer:nth-child(1) {
@@ -172,14 +174,13 @@ a {
 
 .slide {
     height: 10px;
-    width: 1000px;
+    width: 400px;
     position: absolute;
     background-color: transparent;
-    transition: 0.5s ease;
-    transform: translateX(-150%);
+    transition: 1.5s ease;
+    transform: translateX(-400%);
+
 }
-
-
 
 label h1 {
     color: #8000ff;
@@ -193,7 +194,7 @@ label ul {
     display: flex;
     list-style-type: none;
     gap: 30px;
-    padding-left: 90px;
+    padding-left: 10px;
     padding-top: 19px;
     background: transparent;
 }
@@ -241,51 +242,49 @@ input {
 
 .toggle:hover {
     background: #fafafa;
-    transition: 0.5s ease-in-out;
+    opacity: 0.0;
+    transition: 1.5s ease-in-out;
 }
 
     .toggle {
         position: absolute;
         height: 25px;
-        width: 60px;
-        top: 19px;
+        width: 30px;
+        top: 15px;
         left: 15px;
         z-index: 1;
-        cursor: pointer;
         border-radius: 50px;
-        background-color: transparent;
-        opacity: 0.75;
+        cursor: pointer;
         box-shadow: 0 0 10px rgba(5, 5, 5, 0.3);
     }
 
     .toggle .common {
         position: absolute;
         height: 2px;
-        width: 20px;
+        width: 15px;
         gap: 20px;
         background-color: #f6f6f6;
-        border-radius: 50px;
         transition: 0.9s ease;
     }
 
     .toggle .top_line {
-        rotate: 45deg;
-        top: 70%;
+        rotate: 39deg;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .toggle .middle_line {
-        rotate: 45deg;
-        top: 70%;
-        left: 40%;
+        rotate: -35deg;
+        top: 45%;
+        left: 52.5%;
         transform: translate(-50%, -50%);
     }
 
     .toggle .bottom_line {
-        rotate: 45deg;
-        top: 70%;
-        left: 30%;
+        opacity: 0.0%;
+        top: 90%;
+        left: 52.5%;
         transform: translate(-50%, -50%);
     }
 
@@ -294,7 +293,6 @@ input {
         top: 10px;
         width: 25px;
         transform: rotate(45deg);
-        opacity: 0.0%;
     }
 
     input:checked ~ .toggle .middle_line {
@@ -302,23 +300,83 @@ input {
         top: 10px;
         width: 25px;
         transform: rotate(45deg);
-        opacity: 0.4%;
     }
 
     input:checked ~ .toggle .bottom_line {
+        opacity: 1;
         left: 2px;
         top: 10px;
         width: 25px;
         transform: rotate(45deg);
-        opacity: 0.7%;
     }
 
     input:checked ~ .toggle {
-        opacity: 0.0;
         transition: 0.5s ease-out;
     }
 
     input:checked ~ .slide {
         transform: translateX(0);
     }
+}
+
+#yt-link > i {
+    color: rgb(255, 255, 255);
+}
+
+.meta-link {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    border-radius: 6px;
+    bottom: 10px;
+    display: inline-flex;
+    gap: 5px;
+    left: 10px;
+    padding: 10px 20px;
+    position: absolute;
+    text-decoration: none;
+    transition: background-color 400ms, border-color 400ms;
+    z-index: 1000;
+}
+
+.scroll-link {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    border-radius: 6px;
+    bottom: 30px;
+    display: inline-flex;
+    gap: 5px;
+    right: 30px;
+    padding: 10px 20px;
+    position: absolute;
+    text-decoration: none;
+    transition: background-color 400ms, border-color 400ms;
+    z-index: 1;
+}
+
+
+.return {
+    font-size: 1.9em;
+    align-items: center;
+    bottom: 1px;
+    display: inline-flex;
+    right: 1px;
+    position: absolute;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.spacer {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./testing/layer1.svg');
+}
+
+.red {
+    background: #AA2949;
 }
