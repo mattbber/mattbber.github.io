@@ -1,6 +1,5 @@
 # WEBSITE MATTBBER.GITHUB.io (WIP)
 
-Website created by me.
 
 ## Table of Contents 
 - [About](#about)
