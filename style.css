@@ -227,12 +227,10 @@ label a{
     width: 100px;
 }
 
-
 label a:hover {
     background: #fafafa;
     transition: 0.5s ease-in-out;
 }
-
 
 input {
     display: none;
@@ -241,9 +239,7 @@ input {
 }
 
 .toggle:hover {
-    background: #fafafa;
-    opacity: 0.0;
-    transition: 1.5s ease-in-out;
+
 }
 
     .toggle {
