@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="button.css"/>
+    <link rel="stylesheet" href="navbar.css"/>
+    <!-- Scripts -->
+    <script defer src="js/hiddensections.js"></script>
+    <script defer src="js/explodingwords.js"></script>
+    <script defer src="js/button.js"></script>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,400;9..40,800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<label>
+    <input type="checkbox">
+    <div class="toggle">
+        <span class="top_line common"> </span>
+        <span class="middle_line common"> </span>
+        <span class="bottom_line common"> </span>
+    </div>
+    <div class="slide">
+        <ul>
+            <li><a class=navbar href="">home</a></li>
+            <li><a class=navbar href="#loqboxproj">portfolio</a></li>
+            <li><a class=navbar href="#">contact</a></li>
+        </ul>
+    </div>
+</label>
+<section class="normal hidden">
+    <div id="text">
+        <div class="line">
+            <p class="word">Matthew</p>
+            <p class="word">Baber</p>
+        </div>
+        <div class="line">
+            <p class="word">Business &</p>
+            <p class="word">Analytics</p>
+        </div>
+        <div class="line">
+            <a id="phone-link"
+               class="word fancy"
+            href="https://wa.me/447505826409"
+            >/>+44</a>
+            <a id="mail-link"
+               class="word fancy"
+            href=mailto:mattdbaber@gmail.com>/>e-Mail</a>
+        </div>
+        <div class="line">
+            <a id="linkedin-link"
+               class="word fancy"
+               href="https://www.linkedin.com/in/matthewbaber18/"
+            >/>Linkedin</a>
+            <a id="github-link"
+               class="word fancy"
+               href="https://github.com/mattbber"
+            >/>Github</a>
+        </div>
+</div>
+    <a id="yt-link" class="meta-link">
+        <span>©Matthew Baber</span>
+    </a>
+    <a class="scroll-link">
+        <span>SCROLL TO START THE JOURNEY</span>
+    </a>
+    <a class="return">
+    <svg class="return" xmlns="http://www.w3.org/2000/svg"
+         width="1em" height="1em"
+         viewBox="0 0 24 24">
+        <path fill="currentColor" d="m5.915 12.5l3.747 3.746q.14.14.15.344q.01.204-.15.364t-.354.16q-.195 0-.354-.16l-4.389-4.389q-.13-.13-.183-.267q-.053-.136-.053-.298t.053-.298q.053-.137.183-.267l4.389-4.389q.14-.14.344-.15q.204-.01.364.15t.16.354t-.16.354L5.915 11.5h12.47q.269 0 .442-.173t.173-.442V8q0-.213.143-.357q.144-.143.357-.143t.357.143Q20 7.787 20 8v2.885q0 .67-.472 1.143q-.472.472-1.143.472z"/></svg>
+    </a>
+</section>
+
+<div class="spacer hidden"></div>
+
+<section class="red">
+    <div class="about-me"><span>A   b   o   u   t - M   e</span></div>
+    <div class="hidden scroll-reveal">
+            <h2 class="title"><span>
+    i create innovative solutions for businesses through
+</span></h2>
+            <p>
+                <span>
+                    different data analysis by using business and data science techniques.
+                </span>
+            </p>
+    </div>
+</section>
+<div class="spacer2 hidden about-me"></div>
+<section class="normal port hidden" id="loqboxproj">
+        <div class="content hidden">
+            <h2>Analysing customer reviews using innovative data science techniques - Loqbox consulting project</h2>
+            <p><span>This group project remodelled Loqbox’s membership schemes by assessing customer review data of members leaving the platform. Raw data required cleaning, visualisation - the development of dashboard creation software; Tableau - to strengthen future insights and opportunities. As a group, we presented our comprehensive insights, showcasing solution development and competitive advantage enhancement to the client.</span></p>
+            <p>Pandas, JSON, Tableau, PowerBI</p>
+            <ul class="actions stacked">
+                <li><a href="https://github.com/mattbber/LBconsulting-project" class="button">Learn More</a></li>
+            </ul>
+        </div>
+    <div class="image">
+        <div class="img-loqbox"/>
+        </div>
+    </section>
+        <section class="normal port hidden" id="sma">
+            <div class="content hidden">
+                <h2>Employing Social Media and Web analytics to guage customer satisfaction</h2>
+                <p>Utilising Selenium and Beautifulsoup4, this project conducted web scraping on IMDb data for A24 Films. By applying Latent Dirichlet Allocation and Sentiment Analysis to unveil customer sentiments and common themes using Natural Language Processing (NLP) techniques. The model developed in this project effectively models users' preferences and strategies, enhancing consumer connections.</p>
+                <p>Selenium, Beautifulsoup4, HTML, LDA, NLP</p>
+                <ul class="actions stacked">
+                    <li><a href="https://github.com/mattbber/sma" class="button">Learn More</a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <div class="img-sma"/>
+            </div>
+        </section>
+        <section class="normal port hidden" id="dss">
+            <div class="content hidden">
+                <h2>Maximising Revenue for an expanding Stadium - using Analytical Hierarchy Process (AHP) and Goal Programming (GP)</h2>
+                <p>By designing a Decision Support System (DSS), this group report aims to find achievable goals for an expanding football stadium, considering a number of constraints. AHP is used as a method for organising and analysing complex goals, employing mathematics and psychology to determine different goal 'weights'. While, Goal Programming (GP) identified the optimal position considering these constraints and various objectives.</p>
+                <p>MS Excel, Python</p>
+                <ul class="actions stacked">
+                    <li><a href="images/FootballStadiumModelling.pdf" class="button">Learn More</a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <div class="img-ahpgp"/>
+            </div>
+        </section>
+        <section class="normal port hidden" id="UOP">
+            <div class="content">
+                <h2>Government communication on customer decision-making and consumer sentiment in periods of panic buying</h2>
+                <p>This report investigates into herd behaviour during times of scarcity, particularly in response to government communication amid crises like the COVID-19 pandemic. By examining three surveys with different government messaging approaches, it suggests that effective government communication eases consumer fear, potentially reducing panic buying tendencies. Findings from 76 participants in 2022 highlight the significant impact of government communication on consumer behaviour, underlining the need for strategic communication and policy recommendations to address future instances of panic buying</p>
+                <p>SPSS (Statistics), Qualtrics, NVIVO</p>
+                <ul class="actions stacked">
+                    <li><a href="images/diss.pdf" class="button">Learn More</a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <div class="img-ukcovid"/>
+            </div>
+        </section>
+        <section class="normal port hidden" id="dtm">
+            <div class="content">
+                <h2>Creating a Dynamic Topic Model</h2>
+                <p>A project for my Master's thesis that uses Topic Modelling over time series data. Enclosed is the source code on how it works with TripAdvisor sample data.</p>
+                <p>Python, Gensim</p>
+                <ul class="actions stacked">
+                    <li><a href="https://github.com/mattbber/applied-research-project/tree/main/dtm" class="button">Learn More</a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <div class="img-dtm"/>
+            </div>
+        </section>
+        <section class="normal port hidden" id="databusiness">
+            <div class="content">
+                <h2>Using Data Analytics in Business to find the meaning of value in PepsiCo</h2>
+                <p>A project that finds the meaning of value in a business by looking at performance indicators including Stock Market Value, Advertising, R%D costs and Employees. While observing ESG scores, investmnet capital, Tobin's Q and predictive analytics to find what drives these factors by using PepsiCo as a case study.</p>
+                <p>Python</p>
+                <ul class="actions stacked">
+                    <li><a href="images/data_analytics_in_business.pdf" class="button">Learn More</a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <div class="img-vip"/>
+            </div>
+        </section>
+</body>
+</html>
