@@ -164,7 +164,7 @@ a {
 }
 
 .scroll-reveal h2 span {
-    animation-range-start: cover 10vh;
+    animation-range-start: cover 20vh;
     animation-range-end: cover 30vh;
 }
 
