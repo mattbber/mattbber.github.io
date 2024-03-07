@@ -37,7 +37,7 @@ label ul li{
     border-radius: 25px;
 }
 
-label ul li:hover{
+label ul li:hover {
     list-style: none;
     background: #ffffff;
     height: 24px;
