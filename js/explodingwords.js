@@ -34,7 +34,6 @@ const enhance = id => {
     });
 }
 
-enhance("phone-link");
 enhance("mail-link");
 enhance("linkedin-link");
 enhance("github-link");

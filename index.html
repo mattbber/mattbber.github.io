@@ -14,6 +14,8 @@
     <script defer src="js/hiddensections.js"></script>
     <script defer src="js/explodingwords.js"></script>
     <script defer src="js/button.js"></script>
+    <script defer src="js/stickynav.js"></script>
+
 </head>
 <body>
 <!-- Fonts -->
@@ -23,52 +25,65 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<script>
+    document.addEventListener("keydown", e => {
+        if (e.key === "Enter")  {
+            window.scrollBy(0, window.innerHeight);
+        }
+    });
+</script>
 <label>
     <input type="checkbox">
-    <div class="toggle">
-        <span class="top_line common"> </span>
-        <span class="middle_line common"> </span>
-        <span class="bottom_line common"> </span>
-    </div>
-    <div class="slide">
-        <ul>
-            <li><a class=navbar href="">home</a></li>
-            <li><a class=navbar href="#portfolio">portfolio</a></li>
-            <li><a class=navbar href="#">contact</a></li>
-        </ul>
+    <div
+        <div class="toggle">
+            <span class="top_line common"> </span>
+            <span class="middle_line common"> </span>
+            <span class="bottom_line common"> </span>
+        </div>
+        <div class="slide">
+            <ul>
+                    <li><a class="navbar" href="">home</a></li>
+                    <li><a class="navbar" href="#portfolio">portfolio</a></li>
+                    <li><a class="navbar" href="#">contact</a></li>
+            </ul>
+        </div>
     </div>
 </label>
-<section class="normal hidden">
-    <div id="text">
-        <div class="line">
+<section class="intro-section hidden">
+    <div id="text" class="text2">
+        <div>
             <p class="word">Matthew</p>
             <p class="word">Baber</p>
         </div>
+
         <div class="line">
-            <p class="word">Business &</p>
-            <p class="word">Analytics</p>
-        </div>
-        <div class="line">
-            <a id="phone-link"
-               class="word fancy"
-            href="https://wa.me/447505826409"
-            >/>+44</a>
+            <span class="button">
+                <a class="word fancy comment" href="https://wa.me/447505826409">
+                    /=7505826409
+                </a>
+                <a class="word fancy replies">
+                    /+44
+                </a>
+            </span>
             <a id="mail-link"
                class="word fancy"
-            href=mailto:mattdbaber@gmail.com
-            >/>e-Mail</a>
+            href=mailto:mattdbaber@gmail.com>
+                /e-Mail
+            </a>
         </div>
         <div class="line">
             <a id="linkedin-link"
                class="word fancy"
                href="https://www.linkedin.com/in/matthewbaber18/"
-            >/>Linkedin</a>
+            >/Linkedin</a>
             <a id="github-link"
                class="word fancy"
                href="https://github.com/mattbber"
-            >/>Github</a>
+            >/Github</a>
         </div>
-
+        <div class="line">
+            <p class="word third-line">Return<span class="black">.</span><p class="word blink">|</p>
+        </div>
 </div>
     <a id="yt-link" class="meta-link">
         <span>©Matthew Baber</span>
@@ -83,12 +98,37 @@
         <path fill="currentColor" d="m5.915 12.5l3.747 3.746q.14.14.15.344q.01.204-.15.364t-.354.16q-.195 0-.354-.16l-4.389-4.389q-.13-.13-.183-.267q-.053-.136-.053-.298t.053-.298q.053-.137.183-.267l4.389-4.389q.14-.14.344-.15q.204-.01.364.15t.16.354t-.16.354L5.915 11.5h12.47q.269 0 .442-.173t.173-.442V8q0-.213.143-.357q.144-.143.357-.143t.357.143Q20 7.787 20 8v2.885q0 .67-.472 1.143q-.472.472-1.143.472z"/></svg>
     </a>
 </section>
-<div class="spacer hidden"></div>
+<section class="second-section hidden">
+    <div class="section2by3">
+        <div class="column"><p class="word2">
+            Coding?
+            Business Analytics?
+            Neural Networks?
+            Machine learning?
+            Software Dev?
+            <p class="intro-subtext"> Just a few things I have done</p>
+        </div>
+        <div class="separator"></div>
+        <div class="column">
+            <p class="word2">/After Uni</p>
+            <p class="intro-subtext"> Welcome to my website! I am a recent post-graduate from the Univeristy of Bristol with a strong background in
+                C++, Python, SQL, bit of JavaScript and R (although not definetly not my favourite langauges).</p>
+            <p class="intro-subtext">I love a challenge and thinking creatively to solve problems. Recently I returned from travelling from East Asia and Australia and am available for any work.</p>
+            <div class="img-whitsundays"></div>
+        </div>
+        <div class="separator"></div>
+        <div class="column">
+            <p class="word2">/My projects</p>
+            <p class="intro-subtext"> Besides working with clients and creating professional projects to help businesses, I have also been able to fulfill my passion for coding and analysis in my spare time.
+            These proejcts can be found in the portfolio section of this website. If you like any of my projects or simply want to say hi, feel free ot contact me my details are available everywhere on this website! That aside my professional summary is in the next section...</p></div>
+    </div>
+</section>
+<div class="spacer hidden prof-abt-section"></div>
 <section class="red">
     <div class="about-me"><span>a   b   o   u   t - m   e</span></div>
     <div class="hidden scroll-reveal">
             <h2 class="title"><span>
-    I am an accomplished professional with a strong background in business analytics, economics, and engineering.
+    I am an accomplished professional with a strong background in business analytics, economics, and data science.
 </span></h2>
             <p>
                 <span>
@@ -191,5 +231,6 @@
         <p>Created and designed by Matthew Baber&copy;.</p>
     </div>
 </section>
-</body>
+
+
 </html>

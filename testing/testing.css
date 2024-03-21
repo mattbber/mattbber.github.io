@@ -3,17 +3,21 @@
     font-family: 'Roboto', sans-serif;
     color: white;
     overflow-x: hidden;
+
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.prox {
+
+}
 
 section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 400px;
-    padding: 100px 20vw;
+    height: 100vh;
     background: #001220;
+    scroll-snap-align: start;
 }
 
 .curve {

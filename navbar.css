@@ -1,5 +1,12 @@
 .navbar {
     font-family: "Arial", sans-serif;
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .slide {
@@ -37,7 +44,7 @@ label ul li{
     border-radius: 25px;
 }
 
-label ul li:hover {
+label ul li:hover{
     list-style: none;
     background: #ffffff;
     height: 24px;
