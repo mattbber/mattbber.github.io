@@ -36,4 +36,3 @@ const enhance = id => {
 
 enhance("mail-link");
 enhance("linkedin-link");
-enhance("github-link");

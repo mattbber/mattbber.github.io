@@ -15,7 +15,7 @@
     <script defer src="js/explodingwords.js"></script>
     <script defer src="js/button.js"></script>
     <script defer src="js/stickynav.js"></script>
-
+    <script defer src="js/script.js"></script>
 </head>
 <body>
 <!-- Fonts -->
@@ -28,13 +28,15 @@
 <script>
     document.addEventListener("keydown", e => {
         if (e.key === "Enter")  {
-            window.scrollBy(0, window.innerHeight);
+            window.scrollTo({
+                top: window.scrollY + window.innerHeight * 0.8,
+                behavior: 'smooth'
+            });
         }
     });
 </script>
 <label>
     <input type="checkbox">
-    <div
         <div class="toggle">
             <span class="top_line common"> </span>
             <span class="middle_line common"> </span>
@@ -50,18 +52,17 @@
     </div>
 </label>
 <section class="intro-section hidden">
-    <div id="text" class="text2">
+    <div id="text" class="indent">
         <div>
             <p class="word">Matthew</p>
             <p class="word">Baber</p>
         </div>
-
         <div class="line">
             <span class="button">
                 <a class="word fancy comment" href="https://wa.me/447505826409">
                     /=7505826409
                 </a>
-                <a class="word fancy replies">
+                <a id="phone-link" class="word fancy replies">
                     /+44
                 </a>
             </span>
@@ -77,19 +78,19 @@
                href="https://www.linkedin.com/in/matthewbaber18/"
             >/Linkedin</a>
             <a id="github-link"
-               class="word fancy"
+               class="word fancy single"
                href="https://github.com/mattbber"
             >/Github</a>
         </div>
         <div class="line">
-            <p class="word third-line">Return<span class="black">.</span><p class="word blink">|</p>
+            <p class="word">Return<span class="black">.</span><p class="word blink">|</p>
         </div>
 </div>
     <a id="yt-link" class="meta-link">
         <span>©Matthew Baber</span>
     </a>
     <a class="scroll-link">
-        <span>SCROLL TO START THE JOURNEY</span>
+        <span>PRESS 'RETURN' TO START THE JOURNEY</span>
     </a>
     <a class="return">
     <svg class="return" xmlns="http://www.w3.org/2000/svg"
@@ -99,40 +100,41 @@
     </a>
 </section>
 <section class="second-section hidden">
-    <div class="section2by3">
+    <div class="columns">
         <div class="column"><p class="word2">
             Coding?
             Business Analytics?
             Neural Networks?
             Machine learning?
             Software Dev?
-            <p class="intro-subtext"> Just a few things I have done</p>
+            <p class="subtext"> Just a few things I have done</p>
         </div>
         <div class="separator"></div>
         <div class="column">
             <p class="word2">/After Uni</p>
-            <p class="intro-subtext"> Welcome to my website! I am a recent post-graduate from the Univeristy of Bristol with a strong background in
+            <p class="subtext"> Welcome to my website! I am a recent post-graduate from the Univeristy of Bristol with a strong background in
                 C++, Python, SQL, bit of JavaScript and R (although not definetly not my favourite langauges).</p>
-            <p class="intro-subtext">I love a challenge and thinking creatively to solve problems. Recently I returned from travelling from East Asia and Australia and am available for any work.</p>
+            <p class="subtext">I love a challenge and thinking creatively to solve problems. Recently I returned from travelling from East Asia and Australia and am available for any work.</p>
             <div class="img-whitsundays"></div>
         </div>
         <div class="separator"></div>
         <div class="column">
             <p class="word2">/My projects</p>
-            <p class="intro-subtext"> Besides working with clients and creating professional projects to help businesses, I have also been able to fulfill my passion for coding and analysis in my spare time.
+            <p class="subtext"> Besides working with clients and creating professional projects to help businesses, I have also been able to fulfill my passion for coding and analysis in my spare time.
             These proejcts can be found in the portfolio section of this website. If you like any of my projects or simply want to say hi, feel free ot contact me my details are available everywhere on this website! That aside my professional summary is in the next section...</p></div>
     </div>
 </section>
-<div class="spacer hidden prof-abt-section"></div>
-<section class="red">
+<div class="spacer hidden"></div>
+<section class="red abt-section">
     <div class="about-me"><span>a   b   o   u   t - m   e</span></div>
     <div class="hidden scroll-reveal">
-            <h2 class="title"><span>
-    I am an accomplished professional with a strong background in business analytics, economics, and data science.
+            <h2><span>
+                I am an accomplished professional with a strong background in business analytics, economics, and data science.
+                Proven ability with passion for innovation and problem-solving, to leverage data science and visualisations to create transformative change.
 </span></h2>
             <p>
                 <span>
-                    Proven ability with passion for innovation and problem-solving, to leverage data science and visualisations to create transformative change.
+
                 </span>
             </p>
     </div>
@@ -142,26 +144,40 @@
     <div class="about-me">
         <span>p   o   r   t - f   o   l   i   o</span>
     </div>
+    <p class="word">04 Selected Works.</p>
 </section>
-<section class="normal port hidden" id="loqboxproj">
+    <section class="normal port hidden" id="loqboxproj">
         <div class="content hidden">
             <h2>Analysing customer reviews using innovative data science techniques - Loqbox consulting project</h2>
             <p><span>This group project remodelled Loqbox’s membership schemes by assessing customer review data of members leaving the platform. Raw data required cleaning, visualisation - the development of dashboard creation software; Tableau - to strengthen future insights and opportunities. As a group, we presented our comprehensive insights, showcasing solution development and competitive advantage enhancement to the client.</span></p>
             <p>Pandas, JSON, Tableau, PowerBI</p>
-            <ul class="actions stacked">
+            <ul>
                 <li><a href="https://github.com/mattbber/LBconsulting-project" class="button">Learn More</a></li>
             </ul>
         </div>
-    <div class="image">
-        <div class="img-loqbox"/>
+        <div class="image">
+            <div class="img-loqbox"/>
         </div>
     </section>
+<section class="normal port hidden" id="nn">
+    <div class="content hidden">
+        <h2>Creating a Neural Network from Scratch</h2>
+        <p><span>No tensorflow, no Keras. Pure python and Numpy. To really get a grasp on how machine learning actually works I decided to delve into creating a neural network from scratch in python by myself.
+        </span></p>
+        <p>Python</p>
+        <ul>
+            <li><a href="https://github.com/mattbber/nn" class="button">Learn More</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <div class="img-nn"/>
+    </div>
+</section>
         <section class="normal port hidden" id="sma">
             <div class="content hidden">
                 <h2>Employing Social Media and Web analytics to guage customer satisfaction</h2>
                 <p>Utilising Selenium and Beautifulsoup4, this project conducted web scraping on IMDb data for A24 Films. By applying Latent Dirichlet Allocation and Sentiment Analysis to unveil customer sentiments and common themes using Natural Language Processing (NLP) techniques. The model developed in this project effectively models users' preferences and strategies, enhancing consumer connections.</p>
                 <p>Selenium, Beautifulsoup4, HTML, LDA, NLP</p>
-                <ul class="actions stacked">
                     <li><a href="https://github.com/mattbber/sma" class="button">Learn More</a></li>
                 </ul>
             </div>
@@ -174,7 +190,7 @@
                 <h2>Maximising Revenue for an expanding Stadium - using Analytical Hierarchy Process (AHP) and Goal Programming (GP)</h2>
                 <p>By designing a Decision Support System (DSS), this group report aims to find achievable goals for an expanding football stadium, considering a number of constraints. AHP is used as a method for organising and analysing complex goals, employing mathematics and psychology to determine different goal 'weights'. While, Goal Programming (GP) identified the optimal position considering these constraints and various objectives.</p>
                 <p>MS Excel, Python</p>
-                <ul class="actions stacked">
+                <ul>
                     <li><a href="images/FootballStadiumModelling.pdf" class="button">Learn More</a></li>
                 </ul>
             </div>
@@ -231,6 +247,4 @@
         <p>Created and designed by Matthew Baber&copy;.</p>
     </div>
 </section>
-
-
 </html>
