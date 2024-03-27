@@ -156,6 +156,10 @@
         background: #fff;
     }
 
+    .orange {
+        background: #FFA500;
+    }
+
 
     .blink {
         animation: blink 1s linear infinite;
@@ -366,12 +370,37 @@
 
     /* portfolio */
 
+    .word3 {
+        color: white;
+        width: 50vh;
+        font-size: 3vw;
+        text-transform: uppercase;
+        margin: 2rem;
+    }
+
+    .port-columns {
+        display: flex;
+        padding-left: 20vw;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .loqboxproj {
+        height: 80vh;
+    }
+
+    .sma-section {
+        height: 80vh;
+    }
+
+
+
     .normal {
         display: grid;
         place-items: center;
         align-content: center;
         color: white;
-        min-height: 60vh;
+        min-height: 80vh;
     }
 
     .section-port1 {
@@ -381,28 +410,12 @@
         padding: 10px;
     }
 
-    .port-columns {
-        display: flex;
-        padding: 10px;
-        margin: 0;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .word3 {
-        color: white;
-        font-size: 2vw;
-        margin: 0rem;
-        text-transform: uppercase;
-        display: block;
-    }
+   
 
     .port-subtext {
         color: white;
         line-height: 1.5;
     }
-
-
 
     .portfolio {
         display: grid;
@@ -433,7 +446,7 @@
     .img-loqbox {
         width: 600px;
         height: 400px;
-        background-image: url("images/loqbox.png");
+        background-image: url("final_images/loqbox.png");
         background-size: 100%;
         transition: 0.5s ease-in-out;
         background-position: center;
@@ -450,8 +463,8 @@
         flex-grow: 1;
         width: 600px;
         height: 400px;
-        background-image: url("images/sma.jpg");
-        background-size: 110%;
+        background-image: url("final_images/sma.png");
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position: left;
         transition: 0.5s ease-in-out;
