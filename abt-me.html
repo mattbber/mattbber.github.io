@@ -97,9 +97,11 @@
 </body>
 
 <script>
-    $(window).on("load", function () {
-        $(".loader-wrapper").fadeOut(1000);
-        $("body").removeClass("preload");
+    gsap.to(".word", {duration: 0.55, delay: 0.5});
+    gsap.to(".loader-wrapper", {duration: 0.75, opacity: 0, ease: "power1.inOut", delay: .5});
+    //$(window).on("load", function () {
+        //$(".loader-wrapper").fadeOut(1000);
+        //$("body").removeClass("preload");
     });
 
 </script>
