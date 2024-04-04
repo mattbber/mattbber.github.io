@@ -1,0 +1,156 @@
+.zindextop {
+    z-index: 100;
+}
+
+.slide {
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+    height: 50px;
+    width: 450px;
+    position: fixed;
+    background-color: transparent;
+    transition: 1.5s ease;
+    transform: translateX(-110%);
+}
+
+.navbar {
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 250;
+    color: #fff;
+    background-color: transparent;
+    height: 30px;
+    width: 100px;
+}
+
+.navbar:hover {
+    background-color: #f6f6f6;
+    color: black;
+    transition: 0.5s ease-in-out;
+    border-radius: 25px;
+    height: 30px;
+    width: 100px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding-top: 20px;
+    background: transparent;
+}
+
+ul li {
+    list-style: none;
+    background-color: rgb(42, 37, 37);
+    color:#ffffff;
+    height: 30px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+ul li:hover{
+    list-style: none;
+    background-color: #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+ul li a {
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    font-weight: 100;
+    padding: 7px 5px;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s bounce;
+}
+
+input {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.common:hover {
+    box-shadow: 0 0 20px rgb(255, 254, 254);
+}
+
+.toggle {
+    position: fixed;
+    background-color: transparent;
+    opacity: 0.75;
+    height: 40px;
+    width: 42px;
+    top: 15px;
+    left: 10px;
+    z-index: 1;
+    border-radius: 0%;
+    cursor: pointer;
+    /*box-shadow: 5px 5px 10px rgba(5, 5, 5, 0.7);*/
+}
+
+.toggle .common {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 20px;
+    gap: 20px;
+    background-color: #f6f6f6;
+    transition: 0.9s ease;
+}
+
+.toggle .top_line {
+    /*rotate: 39deg;*/
+    top: 45%;
+    left: 48%;
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line {
+    /*rotate: -35deg;*/
+    top: 60%;
+    left: 52%;
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line {
+    /*opacity: 0.0%;*/
+    top: 75%;
+    left: 48%;
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+input:checked ~ .toggle .top_line {
+    left: 9px;
+    top: 20px;
+    width: 25px;
+    transform: rotate(135deg);
+}
+
+input:checked ~ .toggle .middle_line {
+    left: 9px;
+    top: 20px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+input:checked ~ .toggle .bottom_line {
+    opacity: 1;
+    left: 9px;
+    top: 20px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+input:checked ~ .toggle {
+    transition: 1.5s ease-out;
+}
+
+input:checked ~ .slide {
+    transform: translateX(0);
+}

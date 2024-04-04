@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style/portstyles.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/base.css" />
+  <link rel="stylesheet" href="style/navbar.css" />
+  <!-- locomotive scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+</head>
+
+<body>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Scripts -->
+  <script defer src="js/portfolio.js"></script>
+  <script defer src="js/hiddensections.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- GSAP Scripts -->
+  <script defer src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <!-- Main -->
+  <label class="zindextop">
+    <input type="checkbox">
+    <div class="toggle">
+      <span class="top_line common"> </span>
+      <span class="middle_line common"> </span>
+      <span class="bottom_line common"> </span>
+    </div>
+    <div class="slide">
+      <ul>
+        <li><a class="navbar" href="index.html">contact</a></li>
+        <li><a class="navbar" href="abt-me.html">about</a></li>
+        <li><a class="navbar" href="portfolio.html">work</a></li>
+      </ul>
+    </div>
+    </div>
+  </label>
+  <div class="img-gallery" data-scroll-container>
+    <div class="img-gallery-container order" data-scroll>
+
+
+      <div class="img reorder" id="i-1">
+        <div class="img-content">
+          <img class="aimage" src="./final_images/loqbox.png" />
+          <p class="img-text">LOQBOX LTD CONSULTING</p>
+          <p class="port-subtext"> Using Python, Javascript (JSON), Tableau, MS PP</p>
+          <a class="button" href="https://github.com/mattbber/LBXconsulting-project">Learn More</a>
+        </div>
+      </div>
+
+      <div class="img reorder">
+        <div class="img-content">
+          <img class="aimage" src="./final_images/sma.png" />
+          <p class="img-text">Social Media Analytics (SA)</p>
+          <p class="port-subtext"> Using Selenium, BeautifulSoup4, RoBERTa</p>
+          <a class="button" href="https://github.com/mattbber/sma">Learn More</a>
+        </div>
+      </div>
+
+
+      <div class="img reorder">
+        <div class="img-content">
+          <img class="aimage" src="./final_images/nn.png" />
+          <p class="img-text">Neural Networks from Scratch</p>
+          <p class="port-subtext"> Using Python, Numpy only</p>
+          <a class="button" href="https://github.com/mattbber/nn">Learn More</a>
+        </div>
+      </div>
+
+
+      <div class="img reorder">
+        <div class="img-content">
+          <img class="aimage" src="./final_images/ahphp.png" />
+          <p class="img-text">Decision Support Systems</p>
+          <p class="port-subtext"> Using MS Excel, Python</p>
+          <a class="button" href="assets/FootballStadiumModelling.pdf">Learn More</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="hero">
+    <h1>Portfolio</h1>
+    <p class="black">Using Data analytics , Transforming Business's Strategies</p>
+  </div>
+  <div class="btn">Explore Work</div>
+  <div class="loader-wrapper">
+    <div class="loader-background"></div>
+    <p class="loader word">Portfolio</p>
+  </div>
+</body>
+
+<!-- locomotive scroll -->
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+<!-- gsap -->
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+<!-- gsap flip -->
+<script src="https://assets.codepen.io/16327/Flip.min.js"></script>
+
+<!-- custom ease -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CustomEase.min.js"></script>
+
+
+<!-- Preloader -->
+<script>
+  //gsap.to(".word", {duration: 0.55, x: '100px', ease: "power1.inOut", delay: 0.5});
+  //gsap.to(".loader-wrapper", {duration: 0.75, opacity: 0, ease: "power1.inOut", delay: .5});
+  $(window).on("load", function () {
+    $(".loader-wrapper").fadeOut(1500);
+  });
+</script>
+
+</html>

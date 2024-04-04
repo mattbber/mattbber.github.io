@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Stylesheets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/about.css" />
+    <!-- Scripts -->
+    <script defer src="js/hiddensections.js"></script>
+    <script defer src="js/explodingwords.js"></script>
+    <script defer src="js/button.js"></script>
+    <script defer src="js/stickynav.js"></script>
+    <script defer src="js/script.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body class="preload">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <label class="zindextop">
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"> </span>
+            <span class="middle_line common"> </span>
+            <span class="bottom_line common"> </span>
+        </div>
+        <div class="slide">
+            <ul>
+                <li><a class="navbar" href="index.html">contact</a></li>
+                <li><a class="navbar" href="abt-me.html">about</a></li>
+                <li><a class="navbar" href="portfolio.html">work</a></li>
+            </ul>
+        </div>
+        </div>
+    </label>
+    <section class="abt-section-intro red">
+        <div class="abt-title">
+            <p class="word w">. . .</p>
+        </div>
+    </section>
+    <section class="red abt-section">
+        <div class="about-me"><span>a b o u t - m e</span></div>
+        <div class="hidden scroll-reveal">
+            <h2><span>
+                    I am an accomplished professional with a strong background in business analytics, economics, and
+                    data science.
+                    Proven ability with passion for innovation and problem-solving, to leverage data science and
+                    visualisations to create transformative change.
+                </span></h2>
+    </section>
+    <div class="spacer hidden"></div>
+    <section class="abt-section white">
+        <div class="columns">
+            <div class="column">
+                <p class="subtext black">Certifications</p>
+                <p class="subtext black">-> Bloomberg Markets Terminal</p>
+                <p class="subtext black">-> Agile Scrum Method</p>
+            </div>
+            <div class="column">
+                <p class="subtext black"></p>
+                <p class="subtext black">-> C++</p>
+                <div class="cplus"></div>
+                <p class="subtext black">-> Html5</p>
+                <div class="html5"></div>
+                <p class="subtext black">-> JavaScript</p>
+                <div class="javascript"></div>
+                <p class="subtext black">-> Python</p>
+                <div class="python"></div>
+                <p class="subtext black">-> SQL</p>
+                <div class="sql"></div>
+                <p class="subtext black">-> Tableau</p>
+                <div class="tableau"></div>
+
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+    </section>
+    <div class="loader-wrapper">
+        <div class="loader-background"></div>
+        <p class="loader word w">About</p>
+    </div>
+</body>
+
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut(1000);
+        $("body").removeClass("preload");
+    });
+
+</script>
