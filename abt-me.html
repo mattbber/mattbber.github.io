@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,11 +16,10 @@
     <script defer src="js/button.js"></script>
     <script defer src="js/stickynav.js"></script>
     <script defer src="js/script.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="/node_modules/jquery/dist/jquery.js"></script>
       <!-- GSAP Scripts -->
     <script defer src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 </head>
-
 <body>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,11 +111,9 @@
 <!-- Preloader -->
 
 <script>
-  gsap.to(".word", {duration: 0.55, ease: "power1.inOut", delay: 0.5});
-  gsap.to(".loader-wrapper", {duration: 0.75, opacity: 0, ease: "power1.inOut", delay: .5});
-    //$(window).on("load", function () {
-        //$(".loader-wrapper").fadeOut(1000);
-        //$("body").removeClass("preload");
-    //});
+  //gsap.to(".word", {duration: 0.55, ease: "power1.inOut", delay: 0.5});
+  //gsap.to(".loader-wrapper", {duration: 0.75, opacity: 0, ease: "power1.inOut", delay: .5});
 
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="preloader.js"></script>
