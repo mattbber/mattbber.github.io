@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/button.css" />
+    <link rel="stylesheet" href="style/websitecontrol.css" />
     <!-- Scripts -->
     <script defer src="js/hiddensections.js"></script>
     <script defer src="js/explodingwords.js"></script>
@@ -22,7 +24,6 @@
     <!-- GSAP Scripts -->
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 </head>
-
 <body>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,12 +71,12 @@
     </div>
     <div class="blureffect"></div>
     <section class="intro-section" id="home">
-
         <div class="fixed">
             <div id="text" class="indent">
                 <div>
                     <p class="word w matthew">Matthew</p>
                     <p class="word w baber">Baber</p>
+ 
                 </div>
                 <div class="line">
                     <span class="phone">
@@ -99,6 +100,7 @@
                         /Github
                     </a>
                 </div>
+                
                 <div class="line">
                     <p class="word w last">Return</p><span class="black">.</span>
                     <p class="word w blink">|</p>
@@ -187,11 +189,17 @@
                     /My projects
                 </p>
             </div>
-
     </section>
+    <div class="loader-wrapper">
+        <div class="loader-background"></div>
+        <p class="loader word">Contact</p>
+    </div>
 </body>
 
 </html>
 
 <!-- custom ease -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CustomEase.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="preloader.js"></script>
