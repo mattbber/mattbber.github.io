@@ -100,8 +100,12 @@ p {
   background-position: center;
 }
 
-.img:nth-child(1),
-.img:nth-child(3) {
+.img:nth-child(1), .img:nth-child(5) {
+  left: 75%;
+}
+
+.img:nth-child(3),
+.img:nth-child(6) {
   left: 75%;
 }
 
