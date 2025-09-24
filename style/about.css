@@ -19,7 +19,7 @@
     font-family: "Manrope", sans-serif;
     background-color: transparent;
     text-transform: uppercase;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: left;
     display: inline;
     padding: 20px;
@@ -48,7 +48,7 @@
 }
 
 .scroll-reveal span {
-    color: hsla(0, 0%, 95%, 0.2);
+    color: hsla(0, 0%, 100%, 0.2);
     background-clip: text;
     background-repeat: no-repeat;
     background-size: 0% 100%;
