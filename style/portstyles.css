@@ -161,7 +161,7 @@ p {
   text-transform: uppercase;
 }
 
-.loader-wrapper {
+/*.loader-wrapper {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -183,5 +183,5 @@ p {
 .loader {
   position: fixed;
   z-index: 101;
-}
+}*/
 

@@ -118,13 +118,6 @@
         width: 30vw;
     }
 
-    .word {
-        font-size: 4vw;
-        margin: 0rem;
-        text-transform: uppercase;
-        display: block;
-    }
-
     .word2 {
         color: black;
         margin: 15px;
@@ -156,11 +149,6 @@
    .phone:hover .comment {
        display: inline;
        cursor: pointer;
-    }
-    
-    .line {
-        display: flex;
-        justify-content: left;
     }
 
     .img-whitsundays {
@@ -206,29 +194,6 @@
     a {
         text-decoration: none;
     }
-
-    /* Colours */
-
-    .black {
-        color: black;
-    }
-
-    .red {
-        background: #AA2949;
-    }
-
-    .white {
-        background-color: #fff;
-    }
-
-    .w {
-        color: white;
-    }
-
-    .orange {
-        background: #FFA500;
-    }
-
 
     .blink {
         animation: blink 1s linear infinite;
@@ -330,53 +295,6 @@
         cursor: pointer;
     }
 
-    .scroll-reveal {
-        text-align: left;
-        padding-left: 50px;
-        /*padding-block: clamp(1rem, 1vh, 5rem);*/
-        justify-content: space-evenly;
-    }
-
-    .scroll-reveal h2 {
-        font-size: 3.25rem;
-        line-height: 1.5;
-    }
-
-    .scroll-reveal p {
-        font-size: 3.5rem;
-        line-height: 1.5;
-        max-width: 55ch;
-        margin-inline: auto;
-    }
-    .scroll-reveal > * {
-        margin: 0;
-    }
-
-    .scroll-reveal span {
-        color: hsla(0, 0%, 95%, 0.2);
-        background-clip: text;
-        background-repeat: no-repeat;
-        background-size: 0% 100%;
-        background-image: linear-gradient(90deg, white, white);
-        animation: scroll-reveal linear forwards;
-        animation-timeline: view(y);
-    }
-
-    .scroll-reveal h2 span {
-        animation-range-start: cover 30.5vh;
-        animation-range-end: cover 100vh;
-    }
-
-    .scroll-reveal p span {
-        animation-range-start: cover 30.5vh;
-        animation-range-end: cover 50vh;
-    }
-
-    @keyframes scroll-reveal {
-        to {
-            background-size: 100% 100%;
-        }
-    }
 
     #yt-link > i {
         color: rgb(255, 255, 255);
@@ -422,24 +340,6 @@
         z-index: 2;
     }
 
-    .spacer {
-        aspect-ratio: 960/100;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-image: url('/assets/spacer2.svg');
-        transform: rotate(180deg);
-    }
-
-    .spacer2 {
-        aspect-ratio: 960/100;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-image: url('/assets/spacer1.svg');
-    }
 
     /* portfolio */
 
@@ -562,15 +462,6 @@
     .img-ahpgp:hover {
         background-size: 140%;
         background-position: center;
-    }
-
-    .about-me {
-        font-family: "Manrope", sans-serif;
-        background-color: transparent;
-        text-transform: uppercase;
-        color: white;
-        text-align: left;
-        padding: 20px;
     }
 
     .circle-arrow {

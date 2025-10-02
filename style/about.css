@@ -1,9 +1,23 @@
+* {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 0.1px solid red;*/
+}
+
+body {
+    margin: 0rem;
+    overflow-scrolling: auto;
+    display: grid;
+}
+
 .preload {
     overflow: hidden;
 }
 
 .abt-section {
-    height: 70vh;
+    height: 50vh;
 }
 
 .abt-section-intro {
@@ -14,9 +28,7 @@
     padding: 50px;
 }
 
-
 .about-me {
-    font-family: "Manrope", sans-serif;
     background-color: transparent;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -32,105 +44,59 @@
     justify-content: space-evenly;
 }
 
-.scroll-reveal h2 {
-    font-size: 3.25rem;
-    line-height: 1.5;
-}
 
 .scroll-reveal p {
     font-size: 3.5rem;
-    line-height: 1.5;
+    line-height: 1.25;
     max-width: 55ch;
     margin-inline: auto;
 }
-.scroll-reveal > * {
-    margin: 0;
-}
+
 
 .scroll-reveal span {
-    color: hsla(0, 0%, 100%, 0.2);
+    color: hsla(0, 0%, 0%, 0.5);
     background-clip: text;
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    background-image: linear-gradient(90deg, white, white);
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
     animation: scroll-reveal linear forwards;
     animation-timeline: view(y);
 }
 
-.scroll-reveal h2 span {
-    animation-range-start: cover 40.5vh;
-    animation-range-end: cover 140vh;
-}
-
-.scroll-reveal p span {
-    animation-range-start: cover 30.5vh;
-    animation-range-end: cover 50vh;
-}
-
-@keyframes scroll-reveal {
-    to {
-        background-size: 100% 100%;
+.spacer {
+        aspect-ratio: 960/100;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('/assets/spacer2.svg');
+        transform: rotate(180deg);
     }
+
+.spacer2 {
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/assets/spacer1.svg');
 }
 
-
-.loader-wrapper {
-    width: 100%;
-    height: 100%;
-    position: fixed;
+.columns {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  
-.loader-background {
-    top: 0;
-    left: 0;
-    background-color: #DA555C;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 100;
+    justify-content: space-evenly;
+    padding-top: 0;
+    margin: 2rem;
 }
 
-.loader {
-    position: fixed;
-    z-index: 101;
+.columns .column {
+    width: 20vw;
+    
 }
 
-.python {
-    width: 250px;
-    height: 10px;
-    background-color: blue;
-}
-
-.cplus {
-    width: 100px;
-    height: 10px;
-    background-color: lightblue;
-}
-
-.sql {
-    width: 135px;
-    height: 10px;
-    background-color: green;
-}
-
-.javascript {
-    width: 150px;
-    height: 10px;
-    background-color: orange;
-}
-
-.html5 {
-    width: 200px;
-    height: 10px;
-    border: 1px solid black;
-}
-
-.tableau {
-    width: 40px;
-    height: 10px;
-    background-color: darkblue;
+.text {
+    color: black;
+    margin: 15px;
+    line-height: 1;
+    font-size: 1.25rem;
 }

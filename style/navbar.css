@@ -154,3 +154,8 @@ input:checked ~ .toggle {
 input:checked ~ .slide {
     transform: translateX(0);
 }
+
+.line {
+    display: flex;
+    justify-content: left;
+}

@@ -7,10 +7,10 @@
     <title>Information</title>
     <!-- Stylesheets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---<link rel="stylesheet" href="style/style.css" />-->
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="style/about.css" />
     <link rel="stylesheet" href="style/colours.css" />
+    <link rel="stylesheet" href="style/websitecontrol.css" />
     <!-- Scripts -->
     <script defer src="js/hiddensections.js"></script>
     <script defer src="js/explodingwords.js"></script>
@@ -31,10 +31,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <button class="circle-arrow" id="upButton">
-        <span class="arrow1"></span>
-        <span class="arrow2"></span>
-    </button>
     <label class="zindextop">
         <input type="checkbox">
         <div class="toggle">
@@ -44,58 +40,60 @@
         </div>
         <div class="slide">
             <ul>
-                <li><a class="navbar" href="#contact">contact</a></li>
-                <li><a class="navbar" href="abt-me.html">about</a></li>
+                <li><a class="navbar" href="index.html">contact</a></li>
+                <li><a class="navbar" href="about.html">about</a></li>
                 <li><a class="navbar" href="portfolio.html">work</a></li>
             </ul>
         </div>
     </label>
-    <section class="abt-section-intro red">
+<section class="abt-section-intro red">
     </section>
     <section class="red abt-section">
-        <div class="about-me"><span>[about me]</span></div>
         <div class="hidden scroll-reveal">
-            <h2><span>
+            <p><span>
                     I am an accomplished professional with a strong background in business analytics, economics, and
                     data science.
                     Proven ability with passion for innovation and problem-solving, to leverage data science and
                     visualisations to create transformative change.
-                </span></h2>
+            </span></p>
     </section>
     <div class="spacer hidden"></div>
-    <section class="abt-section white">
+
+    <section class="abt-section">
+
         <div class="columns">
             <div class="column">
-                <p class="subtext black">Certifications</p>
-                <p class="subtext black">-> Bloomberg Markets Terminal</p>
-                <p class="subtext black">-> Agile Scrum Method</p>
-            </div>
-            <div class="column">
-                <p class="subtext black"></p>
-                <p class="subtext black">-> C++</p>
-                <div class="cplus"></div>
-                <p class="subtext black">-> Html5</p>
-                <div class="html5"></div>
-                <p class="subtext black">-> JavaScript</p>
-                <div class="javascript"></div>
-                <p class="subtext black">-> Python</p>
-                <div class="python"></div>
-                <p class="subtext black">-> SQL</p>
-                <div class="sql"></div>
-                <p class="subtext black">-> Tableau</p>
-                <div class="tableau"></div>
+                <p class="text black">Programming</p>
+                <p class="text black">-> C++</p>
+                <p class="text black">-> Html5</p>
+                <p class="text black">-> JavaScript</p>
+                <p class="text black">-> Python</p>
+                <p class="text black">-> SQL</p>
+                <p class="text black">-> PowerBI & Tableau</p>
 
             </div>
             <div class="column">
-
+                <p class="text black">Certifications & Qualifications</p>
+                 <p class="text black">-> Azure 900: Microsoft Azure: Fundamentals</p>
+                <p class="text black">-> Databricks: Certified Data Analyst Associate</p>
+                <p class="text black">-> Databricks: Lakehouse Fundamentals</p>
+                <p class="text black">-> Bloomberg Markets Terminal</p>
+                <p class="text black">-> Agile Scrum Method</p>
             </div>
-        </div>
+            <div class="column">
+            <div class="column">
+                <p class="text black">I have experience using a various different programming languages including C++, Html5, Javascript, Python, SQL, Tableau.
+                    Additionally I have managed to achieve more than just this in work including some of the qualifications below
+                </p></div></div>
+
+
     </section>
-    <div class="loader-wrapper">
-        <div class="loader-background"></div>
-        <p class="loader word w">About</p>
-    </div>
+     <div class="loader-wrapper">
+    <div class="loader-background redorange"></div>
+    <p class="loader word black">Information</p>
+  </div>
 </body>
+
 
 <!-- locomotive scroll -->
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
@@ -111,5 +109,11 @@
 
 <!-- Preloader -->
 
+<script>
+  //gsap.to(".word", {duration: 0.55, ease: "power1.inOut", delay: 0.5});
+  //gsap.to(".loader-wrapper", {duration: 0.75, opacity: 0, ease: "power1.inOut", delay: .5});
+
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="preloader.js"></script>
+</html>
