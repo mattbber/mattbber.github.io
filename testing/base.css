@@ -1,0 +1,51 @@
+.card {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+title {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.card * {
+  transition: 1000ms ease;
+}
+
+.card .img {
+  margin: 0;
+  background-color: black;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.card .focus-content {
+  display: block;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.upndownbutton {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+  position: absolute;
+  top: 70%;
+  right: 10%;
+}
+
+.rotater {
+  height: 1px;
+  width: 1px;
+}
+
+
+
