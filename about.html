@@ -18,8 +18,10 @@
     <script defer src="js/stickynav.js"></script>
     <script defer src="js/script.js"></script>
     <script defer src="/node_modules/jquery/dist/jquery.js"></script>
+    <script defer src="js/websitecontrol.js"></script>
       <!-- GSAP Scripts -->
     <script defer src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    
 </head>
 <body>
     <!-- Fonts -->
@@ -40,9 +42,9 @@
         </div>
         <div class="slide">
             <ul>
-                <li><a class="navbar" href="index.html">contact</a></li>
-                <li><a class="navbar" href="about.html">about</a></li>
-                <li><a class="navbar" href="portfolio.html">work</a></li>
+                <li><a class="navbar movepagebtn nav-link" data-page="home">contact</a></li>
+                <li><a class="navbar movepagebtn nav-link" data-page="about">about</a></li>
+                <li><a class="navbar movepagebtn nav-link" data-page="portfolio">work</a></li>
             </ul>
         </div>
     </label>
@@ -92,6 +94,7 @@
     <div class="loader-background redorange"></div>
     <p class="loader word black">Information</p>
   </div>
+  <div class="movepage"></div>
 </body>
 
 

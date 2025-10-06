@@ -9,7 +9,6 @@ CustomEase.create("cubic", "0.83, 0, 0.17, 1");
 const gallery = document.querySelector(".img-gallery-container");
 const images = gsap.utils.toArray(".img");
 let rotationValues = [10, -5, 2, -2];
-
 let isFlipped = false;
 
 function applyRotation() {
@@ -27,13 +26,16 @@ function applyRotation() {
 document.querySelector(".btn").addEventListener("click", () => {
   isFlipped = !isFlipped;
 
+  scroller.scrollTo(0)
+
   setTimeout(() => {
     document.querySelector(".btn").textContent = isFlipped
       ? "Hide All Work"
       : "Explore Work";
   }, 1000);
 
-  let state = Flip.getState(".img-gallery-container, .img");
+  const state = Flip.getState(".img-gallery-container, .img");
+
   gallery.classList.toggle("order");
   images.forEach((img) => img.classList.toggle("reorder"));
 
@@ -43,11 +45,10 @@ document.querySelector(".btn").addEventListener("click", () => {
     rotate: 0,
     stagger: 0.05,
     ease: "cubic",
-    onStart: () => {
-      applyRotation();
-    },
+    onStart: applyRotation,
     onComplete: () => {
       scroller.update();
     },
   });
 });
+

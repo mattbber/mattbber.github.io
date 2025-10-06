@@ -1,3 +1,52 @@
+const movePage = document.querySelector(".movepage");
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // prevent default <a> behavior if used
+
+    // Get the value from data attribute or text
+    let tag = link.dataset.page || link.textContent.toLowerCase();
+    let pageState = "";
+    let loadingColour = "";
+
+    // Check what the tag includes and set the state
+    if (tag.includes("about")) {
+      pageState = "about";
+    } else if (tag.includes("portfolio")) {
+      pageState = "portfolio";
+    } else {
+      // fallback or default page
+      pageState = "home";
+    }
+
+    if (pageState === "about") {
+        movePage.style.backgroundColor = "#CF6442";
+    } else if (pageState === "portfolio") {
+        movePage.style.backgroundColor = "rgb(81, 42, 104)";
+    } else {
+        movePage.style.backgroundColor = "rgb(111, 137, 56)";
+    }
+
+    console.log("Page state is:", pageState);
+
+    // Optional: store it if needed later
+    localStorage.setItem("pageState", pageState);
+
+    // Trigger animation
+    movePage.classList.add("active");
+
+    // Redirect after a short delay (to match animation)
+    setTimeout(() => {
+      window.location.href = `${pageState}.html`;
+    }, 1000); // match your .movepage transition time
+  });
+});
+
+
+
+
+
 window.addEventListener("scroll", function() {
 
     var distanceToBottom = document.documentElement.scrollHeight - window.innerHeight - window.pageYOffset;

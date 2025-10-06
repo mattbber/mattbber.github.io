@@ -27,6 +27,7 @@
   <script defer src="js/portfolio.js"></script>
   <script defer src="js/hiddensections.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script defer src="js/websitecontrol.js"></script>
   <!-- GSAP Scripts -->
   <script defer src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
   <!-- Main -->
@@ -39,9 +40,9 @@
     </div>
     <div class="slide">
       <ul>
-        <li><a class="navbar" href="index.html">contact</a></li>
-        <li><a class="navbar" href="about.html">about</a></li>
-        <li><a class="navbar" href="portfolio.html">work</a></li>
+        <li><a class="navbar movepagebtn nav-link" data-page="home">contact</a></li>
+        <li><a class="navbar movepagebtn nav-link" data-page="about">about</a></li>
+        <li><a class="navbar movepagebtn nav-link" data-page="portfolio">work</a></li>
       </ul>
     </div>
     </div>
@@ -111,6 +112,7 @@
     <div class="loader-background purple"></div>
     <p class="loader word black">Portfolio</p>
   </div>
+  <div class="movepage"></div>
 </body>
 
 <!-- locomotive scroll -->
