@@ -3,13 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 0.1px solid red;*/
+    /* border: 0.1px solid red; <-- for debugging */
 }
 
 body {
     margin: 0rem;
     overflow-scrolling: auto;
+    transition: background-color 1.0s ease;
+    color: red;
     display: grid;
+}
+
+.scrolled {
+    color: blue;
 }
 
 .preload {
@@ -18,6 +24,10 @@ body {
 
 .abt-section {
     height: 50vh;
+}
+
+.second-section {
+    height: 75vh;
 }
 
 .abt-section-intro {
@@ -31,7 +41,6 @@ body {
 .about-me {
     background-color: transparent;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
     text-align: left;
     display: inline;
     padding: 20px;
@@ -44,14 +53,12 @@ body {
     justify-content: space-evenly;
 }
 
-
 .scroll-reveal p {
     font-size: 3.5rem;
     line-height: 1.25;
     max-width: 55ch;
     margin-inline: auto;
 }
-
 
 .scroll-reveal {
     color: hsla(0, 0%, 0%, 0.5);
@@ -69,18 +76,18 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-image: url('/assets/spacer2.svg');
+        background-image: url('/assets/spacer.svg');
         transform: rotate(180deg);
     }
 
-.spacer2 {
+/* .spacer2 {
     aspect-ratio: 960/100;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url('/assets/spacer1.svg');
-}
+} */
 
 .columns {
     display: flex;
